@@ -17,15 +17,16 @@
  *
  */
 
-return array
-(
-	'transport'	=> 'smtp',
-	'options'	=> array
-					(
-						'hostname'	=> 'thewebapp.com',
-						'username'	=> 'mailer@thewebapp.com',
-						'password'	=> 'p@ssw0rd',
-						'port'		=> '25',
-					),
-);
+return array(
+    // transport: smtp, sendmail, mail
+    'transport'     => 'smtp',
 
+    # smtp only
+    'options'       => array(
+        'hostname'  => 'thewebapp.com',
+        'username'  => 'mailer@thewebapp.com',
+        'password'  => 'p@ssw0rd',
+        'port'      => '25',
+        //'encryption'=> 'tls'
+    ),
+);
